@@ -21,7 +21,17 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
+      - name: Checkout CI config
+        uses: actions/checkout@v2
+        with:
+          ref: refs/heads/master-ci
+          path: master-ci
+      - name : PWD
+        run: pwd
+
       - name: create test file
         run: date > date.txt
+
+
 
        
