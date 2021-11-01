@@ -26,7 +26,7 @@ jobs:
       - name: Checkout CI config
         uses: actions/checkout@v2
       - name: show version
-        run: apictl version
+        run: apictl get envs
           
 #   build:
 #     # The type of runner that the job will run on
