@@ -16,7 +16,7 @@ jobs:
   apictl:
     runs-on: ubuntu-latest
     env: 
-      APICTL_CONFIG_DIR: /__w/apictl-workflow/apictl-workflow/master-ci/.wso2apictl
+      APICTL_CONFIG_DIR: /__w/apictl-workflow/apictl-workflow/master-ci
     container:
       image: malinthaprasan/apictl
     steps:
