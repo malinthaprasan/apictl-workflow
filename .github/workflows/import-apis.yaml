@@ -15,11 +15,10 @@ jobs:
   
   apictl:
     runs-on: ubuntu-latest
+    env: 
+      APICTL_CONFIG_DIR: /__w/apictl-workflow/apictl-workflow/master-ci/.wso2apictl
     container:
       image: malinthaprasan/apictl
-      options:
-        -v /__w/apictl-workflow/apictl-workflow/master-ci/.wso2apictl:/.wso2apictl
-        -v /__w/apictl-workflow/apictl-workflow/master:/git/master
     steps:
       - name: checkout
         uses: actions/checkout@v2
