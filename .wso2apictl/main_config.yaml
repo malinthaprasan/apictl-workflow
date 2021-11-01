@@ -1,0 +1,52 @@
+config:
+  http_request_timeout: 10000
+  export_directory: /home/malintha/.wso2apictl/exported
+  kubernetes_mode: false
+  token_type: JWT
+  vcs_deletion_enabled: false
+  vcs_config_file_path: ""
+  vcs_source_repo_path: ""
+  vcs_deployment_repo_path: ""
+  tls-renegotiation-mode: never
+environments:
+  apim:
+    apim: https://apim.com:9443
+    publisher: ""
+    devportal: ""
+    registration: ""
+    admin: ""
+    token: https://apim.com:9443/oauth2/token
+    mi: ""
+  cloud:
+    apim: https://am32.apiever.com/
+    publisher: ""
+    devportal: ""
+    registration: ""
+    admin: ""
+    token: https://am32.apiever.com/oauth2/token
+    mi: ""
+  cloud40:
+    apim: https://am40.apiever.com/
+    publisher: ""
+    devportal: ""
+    registration: ""
+    admin: ""
+    token: https://am40.apiever.com/oauth2/token
+    mi: ""
+  dev:
+    apim: https://localhost:9443
+    publisher: ""
+    devportal: ""
+    registration: ""
+    admin: ""
+    token: https://localhost:9443/oauth2/token
+    mi: ""
+  local:
+    apim: https://172.17.0.1:9443
+    publisher: ""
+    devportal: ""
+    registration: ""
+    admin: ""
+    token: https://172.17.0.1:9443/oauth2/token
+    mi: ""
+mgw-clusters: {}
