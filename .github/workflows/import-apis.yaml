@@ -28,6 +28,7 @@ jobs:
         with:
           ref: refs/heads/master-ci
           path: master-ci
+      - run: ls /
       - name: show version
         run: apictl get envs
           
