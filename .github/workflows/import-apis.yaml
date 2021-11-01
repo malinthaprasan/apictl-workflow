@@ -28,10 +28,9 @@ jobs:
           path: master-ci
       - name : PWD
         run: pwd
-
       - name: create test file
         run: date > date.txt
-
-
-
-       
+        working-directory: ./master-ci
+      - name: ls
+        run: ls
+        working-directory: ./master-ci
