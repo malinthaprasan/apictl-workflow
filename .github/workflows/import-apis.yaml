@@ -28,6 +28,7 @@ jobs:
           ref: refs/heads/master-ci
           path: master-ci
       - run: find /__w/apictl-workflow/apictl-workflow
+      - run: env
       - name: show version
         run: apictl get envs
           
