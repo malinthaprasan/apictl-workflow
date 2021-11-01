@@ -34,3 +34,10 @@ jobs:
       - name: ls
         run: ls
         working-directory: ./master-ci
+      - name: Commit report
+        working-directory: ./master-ci
+        run: |
+          git config --global user.name 'CI bot'
+          git config --global user.email 'bot@users.noreply.github.com'
+          git commit -am "Automated report"
+          git push origin master-ci
