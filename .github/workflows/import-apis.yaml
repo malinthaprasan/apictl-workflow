@@ -31,6 +31,11 @@ jobs:
       - name: create test file
         run: date > date.txt
         working-directory: ./master-ci
+      - name: apictl demo
+        uses: docker://malinthaprasan/apictl
+        with:
+          args: >-
+            version
       - name: ls
         run: ls
         working-directory: ./master-ci
