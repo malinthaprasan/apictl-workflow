@@ -28,7 +28,7 @@ jobs:
         with:
           ref: refs/heads/master-ci
           path: master-ci
-      - run: ls /
+      - run: ls /__w/apictl-workflow/apictl-workflow
       - name: show version
         run: apictl get envs
           
