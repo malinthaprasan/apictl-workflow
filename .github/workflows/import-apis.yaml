@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: malinthaprasan/apictl
-      volumes:
-        - /__w/apictl-workflow/apictl-workflow/master-ci/.wso2apictl:/.wso2apictl
-        - /__w/apictl-workflow/apictl-workflow/master:/git/master
+      options:
+        -v /__w/apictl-workflow/apictl-workflow/master-ci/.wso2apictl:/.wso2apictl
+        -v /__w/apictl-workflow/apictl-workflow/master:/git/master
     steps:
       - name: checkout
         uses: actions/checkout@v2
