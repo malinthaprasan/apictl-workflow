@@ -1,0 +1,6 @@
+deploy:
+  import:
+    preserveProvider: true
+    update: true
+name: PetStore
+version: 1.0.6

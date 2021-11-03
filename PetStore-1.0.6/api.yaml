@@ -1,0 +1,260 @@
+type: api
+version: v4.0.0
+data:
+  id: 5ee84dca-cfa1-4815-a449-5e4e7f5f1fff
+  name: PetStore
+  context: /petstore
+  version: 1.0.6
+  provider: admin
+  lifeCycleStatus: CREATED
+  responseCachingEnabled: false
+  cacheTimeout: 300
+  hasThumbnail: false
+  isDefaultVersion: false
+  isRevision: false
+  revisionId: 0
+  enableSchemaValidation: false
+  type: HTTP
+  transport:
+   - http
+   - https
+  tags: []
+  policies: []
+  authorizationHeader: Authorization
+  securityScheme:
+   - oauth2
+   - oauth_basic_auth_api_key_mandatory
+  visibility: PUBLIC
+  visibleRoles: []
+  visibleTenants: []
+  mediationPolicies: []
+  subscriptionAvailability: CURRENT_TENANT
+  subscriptionAvailableTenants: []
+  additionalProperties: []
+  accessControl: NONE
+  accessControlRoles: []
+  businessInformation: {}
+  corsConfiguration:
+    corsConfigurationEnabled: false
+    accessControlAllowOrigins:
+     - '*'
+    accessControlAllowCredentials: false
+    accessControlAllowHeaders:
+     - authorization
+     - Access-Control-Allow-Origin
+     - Content-Type
+     - SOAPAction
+     - apikey
+     - Internal-Key
+    accessControlAllowMethods:
+     - GET
+     - PUT
+     - POST
+     - DELETE
+     - PATCH
+     - OPTIONS
+  websubSubscriptionConfiguration:
+    enable: false
+    secret: ""
+    signingAlgorithm: SHA1
+    signatureHeader: x-hub-signature
+  createdTime: 2021-11-03 04:24:45.719
+  lastUpdatedTime: 2021-11-03 04:24:46.374
+  endpointConfig:
+    endpoint_type: http
+    sandbox_endpoints:
+      url: https://petstore3.swagger.io/api/v3
+    production_endpoints:
+      url: https://petstore3.swagger.io/api/v3
+  endpointImplementationType: ENDPOINT
+  scopes:
+   -
+    scope:
+      name: read:pets
+      displayName: read:pets
+      description: read your pets
+      bindings: []
+    shared: false
+   -
+    scope:
+      name: write:pets
+      displayName: write:pets
+      description: modify pets in your account
+      bindings: []
+    shared: false
+  operations:
+   -
+    id: ""
+    target: /pet
+    verb: PUT
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes:
+     - write:pets
+     - read:pets
+    usedProductIds: []
+   -
+    id: ""
+    target: /pet
+    verb: POST
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes:
+     - write:pets
+     - read:pets
+    usedProductIds: []
+   -
+    id: ""
+    target: /pet/findByStatus
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes:
+     - write:pets
+     - read:pets
+    usedProductIds: []
+   -
+    id: ""
+    target: /pet/findByTags
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes:
+     - write:pets
+     - read:pets
+    usedProductIds: []
+   -
+    id: ""
+    target: /pet/{petId}
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes:
+     - write:pets
+     - read:pets
+    usedProductIds: []
+   -
+    id: ""
+    target: /pet/{petId}
+    verb: POST
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes:
+     - write:pets
+     - read:pets
+    usedProductIds: []
+   -
+    id: ""
+    target: /pet/{petId}
+    verb: DELETE
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes:
+     - write:pets
+     - read:pets
+    usedProductIds: []
+   -
+    id: ""
+    target: /pet/{petId}/uploadImage
+    verb: POST
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes:
+     - write:pets
+     - read:pets
+    usedProductIds: []
+   -
+    id: ""
+    target: /store/inventory
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+   -
+    id: ""
+    target: /store/order
+    verb: POST
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+   -
+    id: ""
+    target: /store/order/{orderId}
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+   -
+    id: ""
+    target: /store/order/{orderId}
+    verb: DELETE
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+   -
+    id: ""
+    target: /user
+    verb: POST
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+   -
+    id: ""
+    target: /user/createWithList
+    verb: POST
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+   -
+    id: ""
+    target: /user/login
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+   -
+    id: ""
+    target: /user/logout
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+   -
+    id: ""
+    target: /user/{username}
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+   -
+    id: ""
+    target: /user/{username}
+    verb: PUT
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+   -
+    id: ""
+    target: /user/{username}
+    verb: DELETE
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+  categories: []
+  keyManagers:
+   - all
+  advertiseInfo:
+    advertised: false
+    apiOwner: admin
+    vendor: WSO2
