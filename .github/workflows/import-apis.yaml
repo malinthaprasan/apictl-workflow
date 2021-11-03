@@ -31,6 +31,7 @@ jobs:
       - name: show version
         run: apictl get envs
       - run: apictl login cloud40 -u admin -p admin
+      - run: find /__w/apictl-workflow/apictl-workflow
       - run: apictl import api -f /__w/apictl-workflow/apictl-workflow/PetStore-1.0.6 -e apim --update --rotate-revision
           
 #   build:
